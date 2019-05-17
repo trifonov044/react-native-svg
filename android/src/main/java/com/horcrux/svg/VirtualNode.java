@@ -260,7 +260,7 @@ abstract class VirtualNode extends LayoutShadowNode {
         Path clip = getClipPath(canvas, paint);
 
         if (clip != null) {
-            canvas.clipPath(clip, Region.Op.REPLACE);
+            canvas.clipPath(clip);
         }
     }
 
